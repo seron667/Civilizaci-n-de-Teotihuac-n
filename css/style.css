@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}   
+
+ /* para que desplace mas rapido  segun */
+html{
+scroll-behavior: smooth; 
+}
+/* es toda la pag */
+body {
+    text-align: center;
+  cursor:pointer ;
+  background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+/* donde va el titulo */
+header {
+    color: white;
+    padding: 2px;
+    background: linear-gradient(90deg,  #9E6B3F 10%, #4FA59E 50%, #9E6B3F 100%);
+display: flex;
+    align-items: center; /* Alinea verticalmente */
+    gap: 400px; /* Espacio entre la imagen y el texto */
+}
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+/* donde lleva el marquee */
+nav {
+    background-color: #24829160;
+    padding: 10px;
+}
+
+
+/* todo va toda la info  */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 2px;
+    box-sizing: border-box;
+   background-image: url();
+   text-align: justify;
+   
+}
+
+.main-content {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 0px;
+    text-align: justify;
+background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/* donnde va los enlaces  */
+.sidebar {
+    width: 100px;
+    background-color: rgba(147, 44, 140, 0);
+    color: rgba(24, 59, 5, 0.959);
+    padding: 15px;
+text-align: left;
+
+  text-decoration: NONe;
+
+}
+/* es para mover un objeto para arriba, no creo utilizarlo */
+.social:hover{
+    transform: translate(0,-10%);
+}
+
+/* el pie de pagina */
+footer {
+    background: linear-gradient(90deg,  #9E6B3F 10%, #4FA59E 50%, #9E6B3F 100%);
+
+    color: white;
+    padding: 10px;
+    margin-top: auto;
+}
+
+
+
+/* lo hice mal declarando la primera, este es el codigo de la segunda */
+.containerq {
+            display: flex;
+            justify-content: center;
+            margin: 0px; 
+        }
+
+        .main-contentq {
+            background-color: rgba(255, 255, 0, 0);
+            padding: 15px;
+            width: 200%;
+            box-shadow: 5px 5px 5px #ccc;
+            text-align: justify;
+        }
+
+        .sidebarq {
+            background-color: rgb(255, 255, 255);
+            padding:10px;
+            width: 20%;
+            margin-left: 10px;
+            box-shadow: 5px 5px 5px #ccc;
+            border-radius: 90spx;
+            float: left;
+            text-align: justify;
+            background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+        
+/* me pude ahorrar este de abajo solo volviendo a pegar el otro va, pero no me queria confundir  */
+        .sidebarqw {
+            background-color: rgba(24, 196, 70, 0);
+            padding:5px;
+            width: 200%;
+            margin-left: 10px;
+            box-shadow: 5px 5px 5px #ccc;
+            border-radius: 90spx;
+            float: left;
+            text-align: justify;
+        }
+        /* para el contenido al lado de la imagen */
+.d-flex{
+    display: flex;
+    padding: 0px;
+}
+.img{
+
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+/* la transicion de la primera */
+
+        @keyframes diamond-in-hesitate {
+  0% {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  50% {
+    clip-path: polygon(45% 50%, 50% 25%, 55% 50%, 50% 75%);
+  }
+  100% {
+    clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+  }
+}
+
+[transition-style="in:diamond:hesitate"] {
+  animation: 1.5s cubic-bezier(.25, 1, .30, 1) diamond-in-hesitate both;
+}
+
+
+
+/* la transicion de la segunda */
+
+@keyframes polygon-in-opposing-corners {
+  from {
+    clip-path: polygon(0 0, 50% 50%, 100% 100%, 50% 50%);
+  }
+  to {
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+  }
+}
+
+[transition-style="in:polygon:opposing-corners"] {
+  animation: 1.5s cubic-bezier(.25, 1, .30, 1) polygon-in-opposing-corners both;
+} 
+
+
+
+/* la transicion de la tercera */
+
+@keyframes circle-in-hesitate {
+    0% {
+        clip-path: circle(0%);
+    }
+    40% {
+        clip-path: circle(40%);
+    }
+    100% {
+        clip-path: circle(125%);
+    }
+}
+
+[transition-style="in:circle:hesitate"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+
+
+
+/* la transicion de la cuerta */
+@keyframes wipe-in-top-left {
+    from {
+        clip-path: polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%);
+    }
+    to {
+        clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+    }
+}
+
+[transition-style="in:wipe:top-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-left both;
+}
+
+/* la transicion de la quinta */
+@keyframes circle-in-bottom-left {
+    from {
+        clip-path: circle(0%);
+    }
+    to {
+        clip-path: circle(150% at bottom left);
+    }
+}
+
+[transition-style="in:circle:bottom-left"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-bottom-left both;
+}
+
+/* la transicion de la ultima */
+@keyframes wipe-in-bottom-right {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 0, 0 50%);
+    }
+    to {
+        clip-path: polygon(-50% 0%, 200% 0, 0 200%, 0 -50%);
+    }
+}
+
+[transition-style="in:wipe:bottom-right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-bottom-right both;
+}
+
+
+
+
+@media (max-width: 768px){
+form{
+    padding: 10px;
+}
+input,select,textarea,button{
+    font-size: 14px;
+}
+
+
+}
+
+
+/* Ajustes generales para pantallas medianas (tablets) */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .container, .containerq {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sidebar, .sidebarq, .sidebarqw {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .main-content, .main-contentq {
+        width: 100%;
+    }
+}
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .containerq, .container {
+        padding: 10px;
+    }
+
+    .main-contentq, .main-content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .sidebar, .sidebarq, .sidebarqw {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img {
+        padding: 5px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
